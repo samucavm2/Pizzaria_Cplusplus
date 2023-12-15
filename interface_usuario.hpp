@@ -8,13 +8,15 @@ class Interface{
     private:
       Usuario usuario;
     public:
-      Interface();
+       Interface();
       ~Interface();
       void bemVindo();
       void fazerLogin();
       void fazerCadastro();
-      void proseguirPedido();
-      void ExcluirCadastro();
+      void proseguirPedido(string _cpf);
+      void menuOpcoes(string _cpf);
+      void excluirCadastro(string _cpf);
+      void redefinirCadastro();
       void sair();
 };
 #endif
